@@ -25,6 +25,11 @@ app.post('/save-text', (req, res) => {
     });
 });
 
+// POST route to save text to a file
+app.get('/test', (req, res) => {
+      res.status(200).json({ message: 'Response from the moon! Sareh Jahaan Se Accha..!' });
+});
+
 // Start the server
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
